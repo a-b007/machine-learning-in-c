@@ -9,4 +9,6 @@ typedef struct{
 void train(Model *model,float *x,float *y,int n,float lr,int epochs);
 float predict(Model model,float x);
 float compute_loss(Model model,float *x,float *y,int n);
+void ascii_plot(float *x, float *y, int n, Model model);
+
 #endif
