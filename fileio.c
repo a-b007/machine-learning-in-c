@@ -54,3 +54,4 @@ void save_weights(const char*filename,Model model)
     fprintf(file,"%f %f\n",model.w,model.b);
     fclose(file);
 }
+
