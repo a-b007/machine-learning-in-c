@@ -27,7 +27,7 @@ void train(Model *model,float *x,float *y,int n,float lr,int epochs)
             float y_pred = predict(*model,x[i]);
             float error = y_pred-y[i];
             dw += error * x[i];
-            dw += error;
+            db += error;
         }
         dw /= n;
         db /= n;
